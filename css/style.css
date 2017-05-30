@@ -26,6 +26,7 @@
     padding: 5px 10px;
     margin-bottom: 20px;
     text-align: center;
+    font-size: 24px;
 }
 
 #ans {
@@ -33,4 +34,5 @@
     border-style: none;
     background-color: #fff;
     display: none;
+    font-size: 24px;
 }
