@@ -14,16 +14,27 @@ function calc(bin) {
             oneCounter++;
         }
         
-        else if(bin[binSize]>1) {
-            res = "This is not a binary code!";
+        else if(bin[binSize]>1 || (isNaN(parseInt(bin[binSize])))) {
+            res = "err";
             break;
         }
         binSize--;
         ordinalNum*=2;
     }
-    resForm.style.display = "block";
-    resForm.value = "Your decimal number is: " + res;
-    if(bin=="") {
+    
+    if(res == "err") {
+        resForm.style.display = "block";
+        resForm.style.color = "#ff1f1f";
+        resForm.value = "This is not a binary code!";
+    }
+    
+    else if(bin=="") {
         resForm.style.display = "none";
+    }
+    
+    else {
+        resForm.style.display = "block";
+        resForm.style.color = "#2f2f2f";
+        resForm.value = "Your decimal number is: " + res;
     }
 }
