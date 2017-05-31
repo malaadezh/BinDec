@@ -1,5 +1,5 @@
 .wrapper {
-    padding-top: 130px;
+    padding-top: 50px;
 }
 
 .logo img {
@@ -29,7 +29,7 @@
     font-size: 24px;
 }
 
-#ans {
+#ans, #ascii, #hex {
     text-align: center;
     border-style: none;
     background-color: #fff;

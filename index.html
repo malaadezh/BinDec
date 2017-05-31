@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>BinDec</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon_cleaned.svg" type="image/png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
@@ -34,7 +35,9 @@
                 <div class="col-md-4 col-md-offset-4">
                     <form>
                         <input type="text" id="ans" disabled>
-                        <input type="text" id="inp" placeholder="Type your binary code here" onchange="calc()">
+                        <input type="text" id="ascii" disabled>
+                        <input type="text" id="hex" disabled>
+                        <input type="text" id="inp" placeholder="Type your binary code here" oninput="calc()">
                     </form>
                 </div>
             </div>
